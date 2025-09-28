@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ousmane DEME - Portfolio Cybersécurité</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Cybersécurité, Réseaux, Développement" name="keywords">
+    <meta content="Portfolio d'Ousmane DEME, Ingénieur en Cybersécurité et Transmission de Données" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Navbar Start -->
+    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+        <a href="index.html" class="navbar-brand ml-lg-3">
+            <h1 class="m-0 display-5"><span class="text-primary">Ousmane's</span>Folio</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+            <div class="navbar-nav m-auto py-0">
+                <a href="#home" class="nav-item nav-link active">Accueil</a>
+                <a href="#about" class="nav-item nav-link">À propos</a>
+                <a href="#qualification" class="nav-item nav-link">Formation</a>
+                <a href="#skill" class="nav-item nav-link">Compétences</a>
+                <a href="#service" class="nav-item nav-link">Services</a>
+                <a href="#portfolio" class="nav-item nav-link">Projets</a>
+                <a href="#testimonial" class="nav-item nav-link">Témoignages</a>
+                <a href="#blog" class="nav-item nav-link">Blog</a>
+                <a href="#contact" class="nav-item nav-link">Contact</a>
+            </div>
+            <a href="#contact" class="btn btn-outline-primary d-none d-lg-block">Me Recruter</a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Video Modal Start -->
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>        
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
+
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
+                    <img class="img-fluid w-100 rounded-circle shadow-sm" src="img/profile.jpg" alt="">
+                </div>
+                <div class="col-lg-7 text-center text-lg-left">
+                    <h3 class="text-white font-weight-normal mb-3">Je suis</h3>
+                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">Ousmane DEME</h1>
+                    <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
+                    <div class="typed-text d-none">Ingénieur Cybersécurité, Expert Réseaux, Développeur Backend, Administrateur Systèmes, Consultant Sécurité</div>
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
+                        <a href="cv/Ousmane_DEME_CV.pdf" download="Ousmane_DEME_CV.pdf" target="_blank" class="btn btn-outline-light mr-5">Télécharger CV</a>
+                        <button type="button" class="btn-play" data-toggle="modal"
+                            data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">
+                            <span></span>
+                        </button>
+                        <h5 class="font-weight-normal text-white m-0 ml-4 d-none d-sm-block">Voir Vidéo</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-5" id="about">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">À propos</h1>
+                <h1 class="position-absolute text-uppercase text-primary">À propos de moi</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5 pb-4 pb-lg-0">
+                    <img class="img-fluid rounded w-100" src="img/about.jpg" alt="">
+                </div>
+                <div class="col-lg-7">
+                    <h3 class="mb-4">Ingénieur Cybersécurité & Expert Réseaux</h3>
+                    <p>Élève ingénieur en Transmission de données et Sécurité Informatique, spécialisé en cybersécurité, réseaux avancés (SD-WAN, MPLS, HA) et firewalling. Passionné par la sécurisation des infrastructures et la protection des données, avec des compétences solides en administration systèmes & réseaux, virtualisation et sécurité applicative.</p>
+                    <div class="row mb-3">
+                        <div class="col-sm-6 py-2"><h6>Nom: <span class="text-secondary">Ousmane DEME</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Diplôme: <span class="text-secondary">Master 1 TDSI</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Expérience: <span class="text-secondary">2+ Ans</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Téléphone: <span class="text-secondary">+221 78 257 73 64</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Email: <span class="text-secondary">Alkashi089@gmail.com</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Adresse: <span class="text-secondary">Dakar, Sénégal</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>LinkedIn: <span class="text-secondary">ousmane-deme1618</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Freelance: <span class="text-secondary">Disponible</span></h6></div>
+                    </div>
+                    <a href="#contact" class="btn btn-outline-primary mr-4">Me Recruter</a>
+                    <a href="#qualification" class="btn btn-outline-primary">En Savoir Plus</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Qualification Start -->
+    <div class="container-fluid py-5" id="qualification">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Formation</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Formation & Expérience</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3 class="mb-4">Ma Formation</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Master 1 TDSI (Crypto-Informatique)</h5>
+                            <p class="mb-2"><strong>Université Cheikh Anta Diop (UCAD)</strong> | <small>2025</small></p>
+                            <p>Master en Transmission de Données et Sécurité de l'Information avec spécialisation en cryptographie et informatique. Formation avancée en cybersécurité, réseaux sécurisés et protection des données.</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Licence TDSI (Maths Crypto-Informatique)</h5>
+                            <p class="mb-2"><strong>Université Cheikh Anta Diop (UCAD)</strong> | <small>2021-2024</small></p>
+                            <p>Licence en Transmission de Données et Sécurité de l'Information avec spécialisation en mathématiques appliquées à la cryptographie et informatique sécurisée.</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Baccalauréat Scientifique (S2)</h5>
+                            <p class="mb-2"><strong>Lycée Thierno Saïdou Nourou Tall</strong> | <small>2021</small></p>
+                            <p>Baccalauréat série S2 avec spécialisation en sciences exactes, préparant aux études supérieures en informatique et mathématiques.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="mb-4">Mon Expérience</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Développeur Backend & Admin Systèmes</h5>
+                            <p class="mb-2"><strong>DEMOTIC</strong> | <small>Septembre 2025 - Présent</small></p>
+                            <p>Développement d'applications backend robustes et administration des systèmes et réseaux d'entreprise. Mise en place de solutions sécurisées et optimisation des infrastructures IT.</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Stagiaire en Réseaux & Sécurité</h5>
+                            <p class="mb-2"><strong>SESAM INFORMATICS</strong> | <small>Mars - Août 2025</small></p>
+                            <p>Implémentation d'interconnexions sécurisées via VXLAN over IPsec, déploiement SD-WAN et HA, administration PersonView, maintenance serveurs et supervision réseaux Cisco/Fortinet.</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Responsable Associatif</h5>
+                            <p class="mb-2"><strong>Association ALB & Club TDSI</strong> | <small>2022 - Présent</small></p>
+                            <p>Secrétaire Général de l'Association Âme Liñu Bokk et Vice-Président du Club TDSI, responsable de l'organisation d'événements et de la gestion des projets étudiants.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Qualification End -->
+
+
+    <!-- Skill Start -->
+    <div class="container-fluid py-5" id="skill">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Compétences</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Mes Compétences</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Cybersécurité & Firewalling</h6>
+                            <h6 class="font-weight-bold">95%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Réseaux (SD-WAN, MPLS, HA)</h6>
+                            <h6 class="font-weight-bold">90%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Administration Systèmes</h6>
+                            <h6 class="font-weight-bold">85%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Python & Django</h6>
+                            <h6 class="font-weight-bold">88%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Virtualisation (VMware)</h6>
+                            <h6 class="font-weight-bold">82%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Bases de Données</h6>
+                            <h6 class="font-weight-bold">80%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Skill End -->
+
+
+    <!-- Services Start -->
+    <div class="container-fluid pt-5" id="service">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Services</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Mes Services</h1>
+            </div>
+            <div class="row pb-3">
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-shield-alt service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Cybersécurité</h4>
+                    </div>
+                    <p>Audit de sécurité, configuration de firewalls (FortiGate, Cisco ASA, pfSense), mise en place de VPN sécurisés et protection contre les cybermenaces.</p>
+                    <a class="border-bottom border-primary text-decoration-none" href="#contact">En Savoir Plus</a>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-network-wired service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Réseaux Avancés</h4>
+                    </div>
+                    <p>Implémentation SD-WAN, configuration MPLS, haute disponibilité (HA), routing & switching pour des infrastructures réseau robustes et performantes.</p>
+                    <a class="border-bottom border-primary text-decoration-none" href="#contact">En Savoir Plus</a>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-code service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Développement Backend</h4>
+                    </div>
+                    <p>Développement d'applications robustes en Python/Django, intégration de bases de données, APIs REST et solutions web sécurisées.</p>
+                    <a class="border-bottom border-primary text-decoration-none" href="#contact">En Savoir Plus</a>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-server service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Administration Systèmes</h4>
+                    </div>
+                    <p>Administration Windows Server/Linux, virtualisation VMware, supervision avec Zabbix, maintenance et optimisation des infrastructures IT.</p>
+                    <a class="border-bottom border-primary text-decoration-none" href="#contact">En Savoir Plus</a>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-mobile-alt service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Développement Mobile</h4>
+                    </div>
+                    <p>Création d'applications mobiles avec Flutter, interfaces utilisateur intuitives et intégration avec des systèmes backend sécurisés.</p>
+                    <a class="border-bottom border-primary text-decoration-none" href="#contact">En Savoir Plus</a>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-graduation-cap service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Formation & Conseil</h4>
+                    </div>
+                    <p>Formation en cybersécurité, consulting en architecture réseau, accompagnement dans la mise en place de solutions IT sécurisées.</p>
+                    <a class="border-bottom border-primary text-decoration-none" href="#contact">En Savoir Plus</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services End -->
+
+
+    <!-- Portfolio Start -->
+    <div class="container-fluid pt-5 pb-3" id="portfolio">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Projets</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Mes Projets</h1>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center mb-2">
+                    <ul class="list-inline mb-4" id="portfolio-flters">
+                        <li class="btn btn-sm btn-outline-primary m-1 active" data-filter="*">Tous</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".first">Sécurité</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".second">Développement</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".third">Réseaux</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row portfolio-container">
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-1.jpg" alt="Système de Vote Électronique">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/portfolio-1.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h5 class="font-weight-medium mb-2">Système de Vote Électronique</h5>
+                    <p class="text-muted">Django + ZKP + Blockchain</p>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-2.jpg" alt="Application Quiz Mobile">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/portfolio-2.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h5 class="font-weight-medium mb-2">Application Quiz Mobile</h5>
+                    <p class="text-muted">Flutter</p>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-3.jpg" alt="Infrastructure VXLAN">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/portfolio-3.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h5 class="font-weight-medium mb-2">Interconnexion VXLAN/IPsec</h5>
+                    <p class="text-muted">FortiGate</p>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-4.jpg" alt="Site E-commerce">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/portfolio-4.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h5 class="font-weight-medium mb-2">Site E-commerce</h5>
+                    <p class="text-muted">WordPress</p>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-5.jpg" alt="Supervision Zabbix">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/portfolio-5.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h5 class="font-weight-medium mb-2">Supervision Infrastructure</h5>
+                    <p class="text-muted">Zabbix</p>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-6.jpg" alt="Configuration SD-WAN">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/portfolio-6.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h5 class="font-weight-medium mb-2">Déploiement SD-WAN</h5>
+                    <p class="text-muted">Haute Disponibilité</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid py-5" id="testimonial">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Témoignages</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Ce qu'ils disent</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="owl-carousel testimonial-carousel">
+                        <div class="text-center">
+                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                            <h4 class="font-weight-light mb-4">Ousmane a démontré une expertise remarquable en cybersécurité lors de son stage. Son approche méthodique et ses compétences techniques en font un atout précieux pour toute équipe IT.</h4>
+                            <img class="img-fluid rounded-circle mx-auto mb-3" src="img/testimonial-1.jpg" style="width: 80px; height: 80px;">
+                            <h5 class="font-weight-bold m-0">Directeur Technique</h5>
+                            <span>SESAM INFORMATICS</span>
+                        </div>
+                        <div class="text-center">
+                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                            <h4 class="font-weight-light mb-4">Un professionnel rigoureux avec une excellente compréhension des enjeux de sécurité. Sa capacité à implémenter des solutions SD-WAN complexes est impressionnante.</h4>
+                            <img class="img-fluid rounded-circle mx-auto mb-3" src="img/testimonial-2.jpg" style="width: 80px; height: 80px;">
+                            <h5 class="font-weight-bold m-0">Chef de Projet</h5>
+                            <span>Expert Réseaux</span>
+                        </div>
+                        <div class="text-center">
+                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                            <h4 class="font-weight-light mb-4">Ousmane combine parfaitement les compétences techniques et le sens du service. Son travail sur notre infrastructure réseau a considérablement amélioré notre sécurité.</h4>
+                            <img class="img-fluid rounded-circle mx-auto mb-3" src="img/testimonial-3.jpg" style="width: 80px; height: 80px;">
+                            <h5 class="font-weight-bold m-0">Responsable IT</h5>
+                            <span>Entreprise Cliente</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Blog Start -->
+    <div class="container-fluid pt-5" id="blog">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Blog</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Derniers Articles</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mb-5">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded w-100" src="img/blog-1.jpg" alt="">
+                        <div class="blog-date">
+                            <h4 class="font-weight-bold mb-n1">15</h4>
+                            <small class="text-white text-uppercase">Sept</small>
+                        </div>
+                    </div>
+                    <h5 class="font-weight-medium mb-4">Les enjeux de la cybersécurité en 2025 : Zero Trust et IA</h5>
+                    <a class="btn btn-sm btn-outline-primary py-2" href="">Lire Plus</a>
+                </div>
+                <div class="col-lg-4 mb-5">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded w-100" src="img/blog-2.jpg" alt="">
+                        <div class="blog-date">
+                            <h4 class="font-weight-bold mb-n1">22</h4>
+                            <small class="text-white text-uppercase">Août</small>
+                        </div>
+                    </div>
+                    <h5 class="font-weight-medium mb-4">SD-WAN vs MPLS : Guide complet pour choisir votre solution réseau</h5>
+                    <a class="btn btn-sm btn-outline-primary py-2" href="">Lire Plus</a>
+                </div>
+                <div class="col-lg-4 mb-5">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded w-100" src="img/blog-3.jpg" alt="">
+                        <div class="blog-date">
+                            <h4 class="font-weight-bold mb-n1">08</h4>
+                            <small class="text-white text-uppercase">Juil</small>
+                        </div>
+                    </div>
+                    <h5 class="font-weight-medium mb-4">Blockchain et vote électronique : sécuriser la démocratie numérique</h5>
+                    <a class="btn btn-sm btn-outline-primary py-2" href="">Lire Plus</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Blog End -->
+
+
+    <!-- Contact Start -->
+    <div class="container-fluid py-5" id="contact">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Contact</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Contactez-moi</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-form text-center">
+                        <div id="success"></div>
+                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                            <div class="form-row">
+                                <div class="control-group col-sm-6">
+                                    <input type="text" class="form-control p-4" id="name" placeholder="Votre Nom"
+                                        required="required" data-validation-required-message="Veuillez entrer votre nom" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group col-sm-6">
+                                    <input type="email" class="form-control p-4" id="email" placeholder="Votre Email"
+                                        required="required" data-validation-required-message="Veuillez entrer votre email" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <input type="text" class="form-control p-4" id="subject" placeholder="Sujet"
+                                    required="required" data-validation-required-message="Veuillez entrer un sujet" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
+                                <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Message"
+                                    required="required"
+                                    data-validation-required-message="Veuillez entrer votre message"></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div>
+                                <button class="btn btn-outline-primary" type="submit" id="sendMessageButton">Envoyer
+                                    Message</button>
+                            </div>
+                        </form>
+                        
+                        <!-- Contact Info -->
+                        <div class="row mt-5">
+                            <div class="col-md-4 text-center">
+                                <div class="d-flex align-items-center justify-content-center mb-3">
+                                    <i class="fa fa-2x fa-map-marker-alt text-primary"></i>
+                                </div>
+                                <h6 class="font-weight-bold">Adresse</h6>
+                                <p>Dakar, Sénégal</p>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <div class="d-flex align-items-center justify-content-center mb-3">
+                                    <i class="fa fa-2x fa-phone-alt text-primary"></i>
+                                </div>
+                                <h6 class="font-weight-bold">Téléphone</h6>
+                                <p>+221 78 257 73 64</p>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <div class="d-flex align-items-center justify-content-center mb-3">
+                                    <i class="fa fa-2x fa-envelope text-primary"></i>
+                                </div>
+                                <h6 class="font-weight-bold">Email</h6>
+                                <p>Alkashi089@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="container text-center py-5">
+            <div class="d-flex justify-content-center mb-4">
+                <a class="btn btn-light btn-social mr-2" href="https://www.linkedin.com/in/ousmane-deme1618"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-github"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="d-flex justify-content-center mb-3">
+                <a class="text-white" href="#">Confidentialité</a>
+                <span class="px-3">|</span>
+                <a class="text-white" href="#">Conditions</a>
+                <span class="px-3">|</span>
+                <a class="text-white" href="#">FAQ</a>
+                <span class="px-3">|</span>
+                <a class="text-white" href="#contact">Aide</a>
+            </div>
+            <p class="m-0">&copy; <a class="text-white font-weight-bold" href="#">Ousmane DEME</a>. Tous droits réservés. Portfolio Cybersécurité & Réseaux.
+            </p>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Scroll to Bottom -->
+    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- EmailJS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
