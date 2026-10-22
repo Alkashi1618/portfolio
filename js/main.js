@@ -1,7 +1,7 @@
  (function ($) {
             "use strict";
             
-            // Initialize EmailJS - REMPLACEZ PAR VOTRE CLÉ PUBLIQUE
+            // Initialize EmailJS
             emailjs.init("RN1mK9jE_cYJ9-kDi");
             
             // Navbar on scrolling

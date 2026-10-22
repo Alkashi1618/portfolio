@@ -1,776 +1,269 @@
 <!DOCTYPE html>
-<html lang="fr">
-
+<html lang="fr" data-theme="dark">
 <head>
-    <meta charset="utf-8">
-    <title>Ousmane DEME - Spécialiste Sécurité des Systèmes d'Information</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Cybersécurité, Sécurité Informatique, Infrastructure IT, Réseaux" name="keywords">
-    <meta content="Portfolio professionnel d'Ousmane DEME - Spécialiste en Sécurité des Systèmes d'Information et Infrastructure" name="description">
-
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
-
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
-
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ousmane DEME — Ingénieur Sécurité des SI & Cryptographie</title>
+  <meta name="description" content="Portfolio d'Ousmane DEME, ingénieur systèmes, réseaux et sécurité (FortiGate, SOC/SOAR, PKI, ZKP). Master 2 Crypto-Informatique, UCAD. Dakar, Sénégal.">
+  <meta name="theme-color" content="#0a0f1e">
+  <meta property="og:title" content="Ousmane DEME — Sécurité des SI & Cryptographie">
+  <meta property="og:description" content="Sécurité des infrastructures, SOC/SOAR, cryptographie appliquée. Certifié Fortinet FCF, FCA, NSE3.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="img/profile.jpg">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a0f1e'/%3E%3Ctext x='32' y='43' font-family='monospace' font-weight='700' font-size='30' text-anchor='middle' fill='%2322d3ee'%3ED_%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
+  <script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
 </head>
+<body>
+  <div class="progress" id="progress"></div>
+  <div class="glow" id="glow" aria-hidden="true"></div>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="51">
-    <!-- Navbar Start -->
-    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
-        <a href="index.html" class="navbar-brand ml-lg-3">
-            <h1 class="m-0 display-5"><span class="text-primary">Ousmane</span> DEME</h1>
-        </a>
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
-            <div class="navbar-nav m-auto py-0">
-                <a href="#home" class="nav-item nav-link active">Accueil</a>
-                <a href="#about" class="nav-item nav-link">À propos</a>
-                <a href="#qualification" class="nav-item nav-link">Formation</a>
-                <!-- <a href="#certification" class="nav-item nav-link">Certifications</a>
-                <a href="#skill" class="nav-item nav-link">Compétences</a> -->
-                <a href="#service" class="nav-item nav-link">Services</a>
-                <!-- <a href="#portfolio" class="nav-item nav-link">Projets</a>
-                <a href="#testimonial" class="nav-item nav-link">Témoignages</a> -->
-                <a href="#blog" class="nav-item nav-link">Blog</a>
-                <!-- <a href="#contact" class="nav-item nav-link">Contact</a> -->
-            </div>
-            <a href="#contact" class="btn btn-outline-primary d-none d-lg-block">Me Contacter</a>
-        </div>
+  <header class="nav" id="nav">
+    <a href="#home" class="brand" aria-label="Accueil"><span class="brand-mark">D_</span><span class="brand-name">Ousmane DEME</span></a>
+    <nav class="links" id="links" aria-label="Navigation principale">
+      <a href="#about">À propos</a>
+      <a href="#parcours">Parcours</a>
+      <a href="#projets">Projets</a>
+      <a href="#competences">Compétences</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
     </nav>
-    <!-- Navbar End -->
-
-
-    <!-- Video Modal Start -->
-    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>        
-                    <!-- 16:9 aspect ratio -->
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always" allow="autoplay"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeBtn" aria-label="Changer de thème" title="Thème clair / sombre">
+        <svg class="i-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="i-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+      <a href="#contact" class="btn btn-primary btn-sm hide-sm">Me contacter</a>
+      <button class="icon-btn burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
-    <!-- Video Modal End -->
+  </header>
 
-
-    <!-- Header Start -->
-    <div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh;">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
-                    <img class="img-fluid w-100 rounded-circle shadow-sm" src="img/profile.jpg" alt="">
-                </div>
-                <div class="col-lg-7 text-center text-lg-left">
-                    <h3 class="text-white font-weight-normal mb-3">Je suis</h3>
-                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">Ousmane DEME</h1>
-                    <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
-                    <div class="typed-text d-none">Spécialiste Sécurité SI,  Administrateur Systèmes, Administrateur Réseaux, Formateur en Cryptographie</div>
-                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
-                        <a href="#contact" class="btn btn-outline-light mr-5">Me Contacter</a>
-                    </div>
-                </div>
-            </div>
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <canvas id="net" aria-hidden="true"></canvas>
+      <div class="wrap hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow reveal"><span class="dot"></span> Disponible pour de nouvelles opportunités</p>
+          <h1 class="reveal">Salut, je suis <span class="grad">Ousmane DEME</span></h1>
+          <p class="typed reveal"><span class="prompt">&gt;</span> <span id="typed"></span><span class="cursor">▌</span></p>
+          <p class="lead reveal">Ingénieur Systèmes, Réseaux et Sécurité. Je protège des infrastructures réelles (FortiGate, Active Directory, EDR) et je travaille sur la <strong>cryptographie appliquée</strong> : PKI, preuves ZKP, chiffrement homomorphe.</p>
+          <div class="cta reveal">
+            <a href="cv/Ousmane_DEME_CV.pdf" class="btn btn-primary" download>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16"/></svg>
+              Télécharger mon CV
+            </a>
+            <a href="#projets" class="btn btn-ghost">Voir mes projets →</a>
+          </div>
+          <ul class="social reveal">
+            <li><a href="https://www.linkedin.com/in/ousmane-deme1618" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4V21H3zM9.5 9.75h3.8v1.6h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-4.9c0-1.2 0-2.7-1.7-2.7s-1.9 1.3-1.9 2.6V21h-4z"/></svg></a></li>
+            <li><a href="https://github.com/Alkashi1618" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.17 1.18a10.9 10.9 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.59.23 2.76.11 3.05.74.81 1.18 1.83 1.18 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg></a></li>
+            <li><a href="https://x.com/Alkashi1618" target="_blank" rel="noopener" aria-label="X"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a></li>
+            <li><a href="mailto:ousmane.deme1@outlook.com" aria-label="Email"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a></li>
+          </ul>
         </div>
-    </div>
-    <!-- Header End -->
-
-
-    <!-- About Start -->
-    <div class="container-fluid py-5" id="about">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">À propos</h1>
-                <h1 class="position-absolute text-uppercase text-primary">À propos de moi</h1>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-lg-5 pb-4 pb-lg-0">
-                    <img class="img-fluid rounded w-100" src="img/about.jpg" alt="">
-                </div>
-                <div class="col-lg-7">
-                    <h3 class="mb-4">Spécialiste Sécurité des Systèmes d'Information | Infrastructure & Réseaux</h3>
-                    <p>Spécialiste en Sécurité des Systèmes d'Information avec une expertise approfondie en cryptologie, 
-                        infrastructure sécurisée et administration de solutions de protection. 
-                        Maîtrise avancée des environnements Windows Server/Linux, des pare-feu FortiGate/Cisco, et des solutions EDR (Kaspersky). 
-                    </p>
-                    <p>Expérience confirmée en supervision d'infrastructures, mise en œuvre de solutions SD-WAN/VXLAN, et formation en cryptographie. 
-                        Formé à l'analyse d'incidents, la détection d'anomalies et les bonnes pratiques de défense des systèmes d'information. 
-                        Motivé par l'amélioration continue de la posture de sécurité et la transmission de connaissances techniques.</p>
-                    <div class="row mb-3">
-                        <div class="col-sm-6 py-2"><h6>Nom: <span class="text-secondary">Ousmane DEME</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Diplôme: <span class="text-secondary">Master 1 TDSI</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Expérience: <span class="text-secondary">2+ Ans</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Téléphone: <span class="text-secondary">+221 78 257 73 64</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Email: <span class="text-secondary">ousmane.deme1@outlook.com</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Adresse: <span class="text-secondary">Dakar, Sénégal</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>LinkedIn: <span class="text-secondary">ousmane-deme1618</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Freelance: <span class="text-secondary">Disponible</span></h6></div>
-                    </div>
-                    <a href="#contact" class="btn btn-outline-primary mr-4">Me Recruter</a>
-                    <a href="#qualification" class="btn btn-outline-primary">En Savoir Plus</a>
-                </div>
-            </div>
+        <div class="hero-visual reveal">
+          <div class="avatar">
+            <div class="ring"></div>
+            <img src="img/profile.jpg" alt="Portrait d'Ousmane DEME" width="420" height="420">
+          </div>
+          <div class="chip chip-a"><span class="chip-ic">🛡️</span><div><b>Fortinet</b><small>FCF · FCA · NSE3</small></div></div>
+          <div class="chip chip-b"><span class="chip-ic">🔐</span><div><b>Master 2</b><small>Crypto-Informatique</small></div></div>
+          <div class="chip chip-c"><span class="chip-ic">📍</span><div><b>Dakar</b><small>Sénégal</small></div></div>
         </div>
-    </div>
-    <!-- About End -->
+      </div>
+      <a href="#about" class="scroll-hint" aria-label="Défiler"><span></span></a>
+    </section>
 
-
-    <!-- Qualification Start -->
-    <div class="container-fluid py-5" id="qualification">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Formation</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Formation & Expérience</h1>
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="wrap">
+        <header class="sec-head reveal"><p class="kicker">01 — À propos</p><h2>Sécuriser, administrer, <span class="grad">chiffrer</span>.</h2></header>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>Je suis <strong>Support IT &amp; Administrateur Réseaux et Sécurité chez Pyramide Technologies</strong> et <strong>formateur en cryptographie à ITSchool-CITS</strong> (BTS 1 et 2). En parallèle, je termine un <strong>Master 2 Transmission de Données &amp; Sécurité de l'Information</strong> (spécialité Crypto-Informatique, UCAD / LACGAA).</p>
+            <p>Mon terrain : la sécurité des infrastructures, les environnements SOC/SOAR et la cryptographie appliquée. Mon projet de fond est un <strong>système de vote électronique souverain pour le Sénégal</strong>, fondé sur des preuves à divulgation nulle de connaissance et une blockchain permissionnée.</p>
+            <div class="facts">
+              <div><span>Localisation</span><b>Dakar, Sénégal</b></div>
+              <div><span>Langues</span><b>Français · Anglais (B1)</b></div>
+              <div><span>Email</span><b><a href="mailto:ousmane.deme1@outlook.com">ousmane.deme1@outlook.com</a></b></div>
+              <div><span>Téléphone</span><b><a href="tel:+221782577364">+221 78 257 73 64</a></b></div>
             </div>
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <h3 class="mb-4">Ma Formation</h3>
-                    <div class="border-left border-primary pt-2 pl-4 ml-2">
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Master 1 TDSI (Crypto-Informatique)</h5>
-                            <p class="mb-2"><strong>Université Cheikh Anta Diop (UCAD)</strong> | <small>2025</small></p>
-                            <p>Spécialisation en cryptologie, sécurité des systèmes d'information, mathématiques appliquées à la cryptographie.</p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Licence TDSI (Maths Crypto-Informatique)</h5>
-                            <p class="mb-2"><strong>Université Cheikh Anta Diop (UCAD)</strong> | <small>2024</small></p>
-                            <p>Transmission de Données et Sécurité de l'Information avec spécialisation en mathématiques et cryptographie.</p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Baccalauréat Scientifique (S2)</h5>
-                            <p class="mb-2"><strong>LTSNT Thierno Saïdou Nourou Tall</strong> | <small>2021</small></p>
-                            <p>Baccalauréat série scientifique avec mention.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <h3 class="mb-4">Mon Expérience</h3>
-                    <div class="border-left border-primary pt-2 pl-4 ml-2">
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Formateur en Cryptographie</h5>
-                            <p class="mb-2"><strong>ITSchool-CITS</strong> | <small>Novembre 2025 - Présent</small></p>
-                            <p>Conception et animation de formations complètes en cryptographie (AES, RSA, ECC, TLS/SSL, PKI). Enseignement des fondamentaux, modules mathématiques et protocoles sécurisés pour étudiants et professionnels.</p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Stagiaire - Réseaux & Sécurité</h5>
-                            <p class="mb-2"><strong>SESAM INFORMATICS</strong> | <small>Mars - Août 2025 (6 mois)</small></p>
-                            <p>Administration Windows Server/Linux, configuration réseau Cisco/Fortinet. Mise en œuvre VXLAN over IPsec, déploiement SD-WAN/HA, implémentation Kaspersky EDR (20+ politiques), gestion parc informatique 100+ postes.</p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Responsable Associatif</h5>
-                            <p class="mb-2"><strong>Association ALB & Club TDSI</strong> | <small>2022 - Présent</small></p>
-                            <p>Secrétaire Général de l'Association Âme Liñu Bokk et Vice-Président du Club TDSI, organisation d'événements et gestion de projets étudiants.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
+          <div class="stats reveal">
+            <div class="stat"><b data-count="4" data-suffix="">0</b><span>organisations dont je gère le pare-feu FortiGate</span></div>
+            <div class="stat"><b data-count="50" data-suffix="+">0</b><span>postes protégés par Kaspersky EDR (20+ politiques)</span></div>
+            <div class="stat"><b data-count="99.5" data-suffix="%" data-dec="1">0</b><span>de disponibilité sur le SD-WAN en haute disponibilité</span></div>
+            <div class="stat"><b data-count="30" data-prefix="−" data-suffix="%">0</b><span>de latence grâce à l'interconnexion VXLAN/IPsec</span></div>
+          </div>
         </div>
-    </div>
-    <!-- Qualification End -->
-
-<!-- Certifications Start -->
-<div class="container-fluid py-5" id="certification">
-    <div class="container">
-        <div class="position-relative d-flex align-items-center justify-content-center">
-            <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Certifications</h1>
-            <h1 class="position-absolute text-uppercase text-primary">Mes Certifications</h1>
+        <div class="expertise">
+          <article class="card reveal"><div class="ic">🛡️</div><h3>Sécurité des infrastructures</h3><p>FortiGate (HA, IPsec, politiques), Cisco ASA, pfSense, Kaspersky EDR, segmentation, durcissement Linux.</p></article>
+          <article class="card reveal"><div class="ic">📡</div><h3>SOC &amp; SOAR</h3><p>Wazuh, Suricata, Zeek, Shuffle, TheHive, MISP, OpenCTI : détection, orchestration et réponse à incident.</p></article>
+          <article class="card reveal"><div class="ic">🔑</div><h3>Cryptographie appliquée</h3><p>PKI/X.509, ZKP (Circom/SnarkJS), ElGamal homomorphe à seuil, AES, RSA, signatures numériques.</p></article>
+          <article class="card reveal"><div class="ic">🧩</div><h3>Identités &amp; accès</h3><p>Active Directory, Entra ID, Keycloak (SSO, MFA, OAuth2, SAML, OIDC), GPO, Microsoft 365.</p></article>
         </div>
-        
-        <div class="row">
-            <!-- ISO/IEC 27001 - NOUVEAU -->
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="certification-item bg-light rounded overflow-hidden">
-                    <div class="certification-img position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="img/certif/iso-27001.jpg" alt="ISO/IEC 27001">
-                        <div class="certification-overlay d-flex align-items-center justify-content-center">
-                            <a class="btn btn-primary btn-sm" href="img/certif/iso-27001.jpg" data-lightbox="certification">
-                                <i class="fa fa-eye mr-2"></i>Voir
-                            </a>
-                        </div>
-                    </div>
-                    <div class="certification-text p-4">
-                        <h5 class="font-weight-bold mb-2">ISO/IEC 27001 Information Security Associate</h5>
-                        <p class="text-muted mb-2"><i class="fa fa-calendar-alt mr-2"></i>2024</p>
-                        <span class="badge badge-success">SkillFront</span>
-                    </div>
-                </div>
-            </div>
+      </div>
+    </section>
 
-            <!-- Fortinet FCF -->
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="certification-item bg-light rounded overflow-hidden">
-                    <div class="certification-img position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="img/certif/fortinet-fcf.jpg" alt="Fortinet FCF">
-                        <div class="certification-overlay d-flex align-items-center justify-content-center">
-                            <a class="btn btn-primary btn-sm" href="img/certif/fortinet-fcf.jpg" data-lightbox="certification">
-                                <i class="fa fa-eye mr-2"></i>Voir
-                            </a>
-                        </div>
-                    </div>
-                    <div class="certification-text p-4">
-                        <h5 class="font-weight-bold mb-2">Fortinet Certified Fundamentals in Cybersecurity</h5>
-                        <p class="text-muted mb-2"><i class="fa fa-calendar-alt mr-2"></i>2024</p>
-                        <span class="badge badge-primary">Fortinet</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Fortinet FCA -->
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="certification-item bg-light rounded overflow-hidden">
-                    <div class="certification-img position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="img/certif/fortinet-fca.jpg" alt="Fortinet FCA">
-                        <div class="certification-overlay d-flex align-items-center justify-content-center">
-                            <a class="btn btn-primary btn-sm" href="img/certif/fortinet-fca.jpg" data-lightbox="certification">
-                                <i class="fa fa-eye mr-2"></i>Voir
-                            </a>
-                        </div>
-                    </div>
-                    <div class="certification-text p-4">
-                        <h5 class="font-weight-bold mb-2">Fortinet Certified Associate in Cybersecurity</h5>
-                        <p class="text-muted mb-2"><i class="fa fa-calendar-alt mr-2"></i>2024</p>
-                        <span class="badge badge-primary">Fortinet</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ForceN - Analyste Junior -->
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="certification-item bg-light rounded overflow-hidden">
-                    <div class="certification-img position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="img/certif/forcen-analyste.jpg" alt="Analyste Junior Cybersécurité">
-                        <div class="certification-overlay d-flex align-items-center justify-content-center">
-                            <a class="btn btn-primary btn-sm" href="img/certif/forcen-analyste.jpg" data-lightbox="certification">
-                                <i class="fa fa-eye mr-2"></i>Voir
-                            </a>
-                        </div>
-                    </div>
-                    <div class="certification-text p-4">
-                        <h5 class="font-weight-bold mb-2">Analyste Junior en Cybersécurité</h5>
-                        <p class="text-muted mb-2"><i class="fa fa-calendar-alt mr-2"></i>2024</p>
-                        <span class="badge badge-warning">ForceN</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ForceN - Dev Mobile -->
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="certification-item bg-light rounded overflow-hidden">
-                    <div class="certification-img position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="img/certif/forcen-mobile.jpg" alt="Développement Mobile">
-                        <div class="certification-overlay d-flex align-items-center justify-content-center">
-                            <a class="btn btn-primary btn-sm" href="img/certif/forcen-mobile.jpg" data-lightbox="certification">
-                                <i class="fa fa-eye mr-2"></i>Voir
-                            </a>
-                        </div>
-                    </div>
-                    <div class="certification-text p-4">
-                        <h5 class="font-weight-bold mb-2">Développement Mobile</h5>
-                        <p class="text-muted mb-2"><i class="fa fa-calendar-alt mr-2"></i>2024</p>
-                        <span class="badge badge-warning">ForceN</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Udemy - Windows Command -->
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="certification-item bg-light rounded overflow-hidden">
-                    <div class="certification-img position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="img/certif/udemy-windows.jpg" alt="Windows Command">
-                        <div class="certification-overlay d-flex align-items-center justify-content-center">
-                            <a class="btn btn-primary btn-sm" href="img/certif/udemy-windows.jpg" data-lightbox="certification">
-                                <i class="fa fa-eye mr-2"></i>Voir
-                            </a>
-                        </div>
-                    </div>
-                    <div class="certification-text p-4">
-                        <h5 class="font-weight-bold mb-2">Windows Command Mastery for Ethical Hackers</h5>
-                        <p class="text-muted mb-2"><i class="fa fa-calendar-alt mr-2"></i>2024</p>
-                        <span class="badge badge-info">Udemy</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Udemy - IT Troubleshooting -->
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="certification-item bg-light rounded overflow-hidden">
-                    <div class="certification-img position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="img/certif/udemy-troubleshooting.jpg" alt="IT Troubleshooting">
-                        <div class="certification-overlay d-flex align-items-center justify-content-center">
-                            <a class="btn btn-primary btn-sm" href="img/certif/udemy-troubleshooting.jpg" data-lightbox="certification">
-                                <i class="fa fa-eye mr-2"></i>Voir
-                            </a>
-                        </div>
-                    </div>
-                    <div class="certification-text p-4">
-                        <h5 class="font-weight-bold mb-2">Advanced IT Troubleshooting for Helpdesk Support</h5>
-                        <p class="text-muted mb-2"><i class="fa fa-calendar-alt mr-2"></i>2024</p>
-                        <span class="badge badge-info">Udemy</span>
-                    </div>
-                </div>
-            </div>
+    <!-- PARCOURS -->
+    <section class="section alt" id="parcours">
+      <div class="wrap">
+        <header class="sec-head reveal"><p class="kicker">02 — Parcours</p><h2>Expérience &amp; <span class="grad">formation</span></h2></header>
+        <div class="tabs reveal" role="tablist">
+          <button class="tab active" role="tab" data-tab="exp" aria-selected="true">Expérience</button>
+          <button class="tab" role="tab" data-tab="edu" aria-selected="false">Formation</button>
         </div>
-    </div>
-</div>
-<!-- Certifications End -->
 
-    <!-- Skill Start -->
-    <div class="container-fluid py-5" id="skill">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Compétences</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Mes Compétences</h1>
+        <div class="timeline tab-panel active" id="tab-exp">
+          <article class="tl-item reveal">
+            <div class="tl-date">Avr. 2026 — Présent</div>
+            <div class="tl-card">
+              <h3>Support IT &amp; Administrateur Réseaux et Sécurité</h3>
+              <p class="org">Pyramide Technologies</p>
+              <ul>
+                <li>Politiques et profils de sécurité <b>FortiGate</b> (filtrage, VPN, double lien WAN avec basculement) pour 4 organisations : Wetlands Africa, PRCM, BirdLife et RAMPAO.</li>
+                <li>Identités et droits d'accès : <b>Active Directory</b> (comptes, groupes, OU, GPO) et Microsoft 365.</li>
+                <li>Protection des postes (Kaspersky Endpoint Security), supervision LAN/WAN, VLAN, routage, DNS, DHCP.</li>
+                <li>Incidents IT et sécurité via GLPI, support utilisateurs niveaux 1 et 2.</li>
+                <li>Conception de <b>LmcRooms</b>, application de réservation de salles (Django/DRF, React, PostgreSQL).</li>
+              </ul>
+              <div class="tags"><span>FortiGate</span><span>Active Directory</span><span>Kaspersky</span><span>GLPI</span><span>Django</span><span>React</span></div>
             </div>
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Cybersécurité & Pare-feu</h6>
-                            <h6 class="font-weight-bold">95%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Cryptologie & PKI</h6>
-                            <h6 class="font-weight-bold">93%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Administration Systèmes (Windows/Linux)</h6>
-                            <h6 class="font-weight-bold">90%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Réseaux & Infrastructure (Cisco/Fortinet)</h6>
-                            <h6 class="font-weight-bold">88%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">EDR & Solutions de Sécurité</h6>
-                            <h6 class="font-weight-bold">85%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Virtualisation (VMware/Hyper-V)</h6>
-                            <h6 class="font-weight-bold">87%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-secondary" role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Analyse & SOC (Wireshark/Suricata)</h6>
-                            <h6 class="font-weight-bold">82%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Développement (Python/Django/JavaScript)</h6>
-                            <h6 class="font-weight-bold">80%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                </div>
+          </article>
+          <article class="tl-item reveal">
+            <div class="tl-date">Nov. 2025 — Présent</div>
+            <div class="tl-card">
+              <h3>Formateur en Cryptographie</h3>
+              <p class="org">ITSchool-CITS</p>
+              <ul>
+                <li>Fondamentaux : confidentialité, intégrité, authenticité.</li>
+                <li>Modules mathématiques : arithmétique modulaire, nombres premiers, PGCD, inverses modulaires.</li>
+                <li>Cryptographie avancée : AES, Diffie-Hellman, RSA, ElGamal, PKI (certificats X.509, CA).</li>
+              </ul>
+              <div class="tags"><span>AES</span><span>RSA</span><span>ElGamal</span><span>PKI</span><span>Pédagogie</span></div>
             </div>
+          </article>
+          <article class="tl-item reveal">
+            <div class="tl-date">Mars — Août 2025</div>
+            <div class="tl-card">
+              <h3>Stagiaire Réseaux &amp; Sécurité</h3>
+              <p class="org">SESAM INFORMATICS</p>
+              <ul>
+                <li>Interconnexion sécurisée <b>VXLAN/IPsec</b> (−30 % de latence) sur équipements Cisco et Fortinet.</li>
+                <li>Déploiement <b>SD-WAN</b> et haute disponibilité (99,5 % d'uptime).</li>
+                <li>Durcissement de serveurs Linux : SSH, services, pare-feu, politiques de mise à jour.</li>
+                <li>Déploiement <b>Kaspersky EDR</b> (20+ politiques) sur un parc de 50+ postes.</li>
+              </ul>
+              <div class="tags"><span>VXLAN</span><span>IPsec</span><span>SD-WAN</span><span>Cisco</span><span>Linux</span><span>EDR</span></div>
+            </div>
+          </article>
         </div>
-    </div>
-    <!-- Skill End -->
 
-
-    <!-- Services Start -->
-    <div class="container-fluid pt-5" id="service">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Services</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Mes Services</h1>
-            </div>
-            <div class="row pb-3">
-                <div class="col-lg-4 col-md-6 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fa fa-2x fa-shield-alt service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">Audit de Sécurité</h4>
-                    </div>
-                    <p>Évaluation complète de votre infrastructure IT, identification des vulnérabilités et recommandations pour renforcer votre posture de sécurité.</p>
-                    <a class="border-bottom border-primary text-decoration-none" href="#contact">En Savoir Plus</a>
-                </div>
-                <div class="col-lg-4 col-md-6 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fa fa-2x fa-network-wired service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">Infrastructure Réseau</h4>
-                    </div>
-                    <p>Conception, déploiement et optimisation d'infrastructures réseau sécurisées (SD-WAN, VXLAN, HA) avec équipements Cisco et Fortinet.</p>
-                    <a class="border-bottom border-primary text-decoration-none" href="#contact">En Savoir Plus</a>
-                </div>
-                <div class="col-lg-4 col-md-6 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fa fa-2x fa-lock service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">Cryptographie & PKI</h4>
-                    </div>
-                    <p>Implémentation de solutions cryptographiques, gestion de PKI, déploiement de certificats SSL/TLS et formation en sécurité cryptographique.</p>
-                    <a class="border-bottom border-primary text-decoration-none" href="#contact">En Savoir Plus</a>
-                </div>
-                <div class="col-lg-4 col-md-6 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fa fa-2x fa-server service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">Administration Systèmes</h4>
-                    </div>
-                    <p>Gestion complète de serveurs Windows/Linux, Active Directory, virtualisation (VMware/Hyper-V), sauvegarde et supervision d'infrastructure.</p>
-                    <a class="border-bottom border-primary text-decoration-none" href="#contact">En Savoir Plus</a>
-                </div>
-                <div class="col-lg-4 col-md-6 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fa fa-2x fa-eye service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">SOC & Monitoring</h4>
-                    </div>
-                    <p>Mise en place de solutions de supervision (Zabbix), détection d'intrusions (Suricata), analyse de logs et réponse aux incidents de sécurité.</p>
-                    <a class="border-bottom border-primary text-decoration-none" href="#contact">En Savoir Plus</a>
-                </div>
-                <div class="col-lg-4 col-md-6 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fa fa-2x fa-chalkboard-teacher service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">Formation & Consulting</h4>
-                    </div>
-                    <p>Formation en cybersécurité, consulting en architecture réseau et accompagnement dans la mise en place de solutions IT sécurisées.</p>
-                    <a class="border-bottom border-primary text-decoration-none" href="#contact">En Savoir Plus</a>
-                </div>
-            </div>
+        <div class="timeline tab-panel" id="tab-edu">
+          <article class="tl-item">
+            <div class="tl-date">2024 — Présent</div>
+            <div class="tl-card"><h3>Master — Transmission de Données &amp; Sécurité de l'Information</h3><p class="org">UCAD — TDSI / LACGAA</p><p>Spécialisation Crypto-Informatique. Mémoire : système de vote électronique souverain (ZKP, chiffrement homomorphe, Hyperledger Fabric).</p></div>
+          </article>
+          <article class="tl-item">
+            <div class="tl-date">2021 — 2024</div>
+            <div class="tl-card"><h3>Licence — Transmission de Données &amp; Sécurité de l'Information</h3><p class="org">UCAD — TDSI / LACGAA</p><p>Spécialisation Crypto-Informatique. Mémoire : vote électronique à preuves ZKP sur Ethereum.</p></div>
+          </article>
+          <article class="tl-item">
+            <div class="tl-date">2020 — 2021</div>
+            <div class="tl-card"><h3>Baccalauréat Scientifique (S2)</h3><p class="org">Lycée Thierno Saïdou Nourou Tall</p></div>
+          </article>
         </div>
-    </div>
-    <!-- Services End -->
+      </div>
+    </section>
 
+    <!-- PROJETS -->
+    <section class="section" id="projets">
+      <div class="wrap">
+        <header class="sec-head reveal"><p class="kicker">03 — Projets</p><h2>Ce que j'ai <span class="grad">construit</span></h2></header>
+        <div class="filters reveal" id="filters">
+          <button class="chip-btn active" data-f="all">Tous</button>
+          <button class="chip-btn" data-f="crypto">Cryptographie</button>
+          <button class="chip-btn" data-f="secu">Sécurité &amp; SOC</button>
+          <button class="chip-btn" data-f="reseau">Réseaux</button>
+          <button class="chip-btn" data-f="dev">Développement</button>
+        </div>
+        <div class="projects" id="projects"></div>
+      </div>
+    </section>
 
-    <!-- Portfolio Start -->
-    <div class="container-fluid pt-5 pb-3" id="portfolio">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Projets</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Mes Projets</h1>
-            </div>
+    <!-- COMPETENCES -->
+    <section class="section alt" id="competences">
+      <div class="wrap">
+        <header class="sec-head reveal"><p class="kicker">04 — Compétences</p><h2>Ma boîte à <span class="grad">outils</span></h2></header>
+        <div class="skills" id="skills"></div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section class="section" id="certifications">
+      <div class="wrap">
+        <header class="sec-head reveal"><p class="kicker">05 — Certifications</p><h2>Preuves &amp; <span class="grad">validations</span></h2></header>
+        <div class="certs" id="certs"></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section alt" id="contact">
+      <div class="wrap">
+        <header class="sec-head reveal"><p class="kicker">06 — Contact</p><h2>Travaillons <span class="grad">ensemble</span></h2></header>
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <p>Une mission, un poste, un projet de sécurité ou de cryptographie ? Écrivez-moi, je réponds rapidement.</p>
+            <ul class="contact-list">
+              <li><span class="ic">✉️</span><div><small>Email</small><a href="mailto:ousmane.deme1@outlook.com">ousmane.deme1@outlook.com</a></div></li>
+              <li><span class="ic">📞</span><div><small>Téléphone</small><a href="tel:+221782577364">+221 78 257 73 64</a></div></li>
+              <li><span class="ic">💼</span><div><small>LinkedIn</small><a href="https://www.linkedin.com/in/ousmane-deme1618" target="_blank" rel="noopener">ousmane-deme1618</a></div></li>
+              <li><span class="ic">📍</span><div><small>Localisation</small><span>Dakar, Sénégal</span></div></li>
+            </ul>
+          </div>
+          <form class="form reveal" id="contactForm" novalidate>
             <div class="row">
-                <div class="col-12 text-center mb-2">
-                    <ul class="list-inline mb-4" id="portfolio-flters">
-                        <li class="btn btn-sm btn-outline-primary m-1 active" data-filter="*">Tous</li>
-                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".first">Sécurité</li>
-                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".second">Développement</li>
-                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".third">Réseaux</li>
-                    </ul>
-                </div>
+              <label>Nom<input type="text" id="name" required autocomplete="name"></label>
+              <label>Email<input type="email" id="email" required autocomplete="email"></label>
             </div>
-            <div class="row portfolio-container">
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-1.jpg" alt="Système de Vote Électronique">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-1.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <h5 class="font-weight-medium mb-2">Système de Vote Électronique</h5>
-                    <p class="text-muted">Django + ZKP + Blockchain</p>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-2.jpg" alt="Application Quiz Mobile">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-2.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <h5 class="font-weight-medium mb-2">Application Quiz Mobile</h5>
-                    <p class="text-muted">Flutter</p>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-3.jpg" alt="Infrastructure VXLAN">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-3.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <h5 class="font-weight-medium mb-2">Interconnexion VXLAN/IPsec</h5>
-                    <p class="text-muted">FortiGate</p>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-4.jpg" alt="Site E-commerce">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-4.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <h5 class="font-weight-medium mb-2">Site E-commerce</h5>
-                    <p class="text-muted">WordPress</p>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-5.jpg" alt="Supervision Zabbix">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-5.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <h5 class="font-weight-medium mb-2">Supervision Infrastructure</h5>
-                    <p class="text-muted">Zabbix</p>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-6.jpg" alt="Configuration SD-WAN">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-6.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <h5 class="font-weight-medium mb-2">Déploiement SD-WAN</h5>
-                    <p class="text-muted">Haute Disponibilité</p>
-                </div>
-            </div>
+            <label>Sujet<input type="text" id="subject" required></label>
+            <label>Message<textarea id="message" rows="5" required></textarea></label>
+            <button type="submit" class="btn btn-primary" id="sendBtn">Envoyer le message</button>
+            <p class="form-msg" id="formMsg" role="status" aria-live="polite"></p>
+          </form>
         </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap foot">
+      <p>© <span id="year"></span> Ousmane DEME · Sécurité des SI &amp; Cryptographie</p>
+      <a href="#home" class="to-top">Retour en haut ↑</a>
     </div>
-    <!-- Portfolio End -->
+  </footer>
 
-
-    <!-- Testimonial Start -->
-    <div class="container-fluid py-5" id="testimonial">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Témoignages</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Ce qu'ils disent</h1>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="owl-carousel testimonial-carousel">
-                        <div class="text-center">
-                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <h4 class="font-weight-light mb-4">Ousmane a démontré une expertise remarquable en cybersécurité lors de son stage. Sa maîtrise des pare-feu FortiGate et sa capacité à déployer des solutions complexes comme le SD-WAN ont été des atouts précieux pour nos projets.</h4>
-                            <img class="img-fluid rounded-circle mx-auto mb-3" src="img/testimonial-1.jpg" style="width: 80px; height: 80px;">
-                            <h5 class="font-weight-bold m-0">Direction Technique</h5>
-                            <span>SESAM INFORMATICS</span>
-                        </div>
-                        <div class="text-center">
-                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <h4 class="font-weight-light mb-4">En tant que formateur en cryptographie, Ousmane possède une capacité exceptionnelle à vulgariser des concepts complexes. Sa pédagogie et sa passion pour la sécurité informatique inspirent nos étudiants.</h4>
-                            <img class="img-fluid rounded-circle mx-auto mb-3" src="img/testimonial-2.jpg" style="width: 80px; height: 80px;">
-                            <h5 class="font-weight-bold m-0">Équipe Pédagogique</h5>
-                            <span>ITSchool-CITS</span>
-                        </div>
-                        <div class="text-center">
-                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <h4 class="font-weight-light mb-4">Professionnel rigoureux et réactif, Ousmane a su gérer efficacement notre parc informatique et apporter des solutions pertinentes à nos problématiques de sécurité réseau.</h4>
-                            <img class="img-fluid rounded-circle mx-auto mb-3" src="img/testimonial-3.jpg" style="width: 80px; height: 80px;">
-                            <h5 class="font-weight-bold m-0">Client Corporate</h5>
-                            <span>Secteur Bancaire</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <!-- Modal projet -->
+  <div class="modal" id="modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-box">
+      <button class="icon-btn modal-close" id="modalClose" aria-label="Fermer">✕</button>
+      <div id="modalBody"></div>
     </div>
-    <!-- Testimonial End -->
+  </div>
 
-
-    <!-- Blog Start -->
-    <div class="container-fluid pt-5" id="blog">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Blog</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Derniers Articles</h1>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 mb-5">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="img/blog-1.jpg" alt="">
-                        <!-- <div class="blog-date">
-                            <h4 class="font-weight-bold mb-n1">01</h4>
-                            <small class="text-white text-uppercase">Jan</small>
-                        </div> -->
-                    </div>
-                    <h5 class="font-weight-medium mb-4">Les enjeux de la cybersécurité en 2025 : Zero Trust et IA</h5>
-                    <a class="btn btn-sm btn-outline-primary py-2" href="https://alkashi1618.github.io/Blogs/">Lire Plus</a>
-                </div>
-                <div class="col-lg-4 mb-5">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="img/blog-2.jpg" alt="">
-                        <!-- <div class="blog-date">
-                            <h4 class="font-weight-bold mb-n1">01</h4>
-                            <small class="text-white text-uppercase">Jan</small>
-                        </div> -->
-                    </div>
-                    <h5 class="font-weight-medium mb-4">Système d'Authentification Centralisée avec Keycloak</h5>
-                    <a class="btn btn-sm btn-outline-primary py-2" href="https://alkashi1618.github.io/Keycloak/">Lire Plus</a>
-                </div>
-                <div class="col-lg-4 mb-5">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="img/blog-3.jpg" alt="">
-                        <!-- <div class="blog-date">
-                            <h4 class="font-weight-bold mb-n1">01</h4>
-                            <small class="text-white text-uppercase">Jan</small>
-                        </div> -->
-                    </div>
-                    <h5 class="font-weight-medium mb-4">Blockchain et vote électronique : sécuriser la démocratie numérique</h5>
-                    <a class="btn btn-sm btn-outline-primary py-2" href="https://alkashi1618.github.io/M%C3%A9moireL3/">En Savoir Plus</a>
-                </div>
-            </div>
-        </div>
+  <!-- Lightbox certification -->
+  <div class="modal" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-box light">
+      <button class="icon-btn modal-close" id="lbClose" aria-label="Fermer">✕</button>
+      <img id="lbImg" alt="">
     </div>
-    <!-- Blog End -->
+  </div>
 
-
-    <!-- Contact Start -->
-    <div class="container-fluid py-5" id="contact">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Contact</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Contactez-moi</h1>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="contact-form text-center">
-                        <div id="success"></div>
-                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                            <div class="form-row">
-                                <div class="control-group col-sm-6">
-                                    <input type="text" class="form-control p-4" id="name" placeholder="Votre Nom"
-                                        required="required" data-validation-required-message="Veuillez entrer votre nom" />
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="control-group col-sm-6">
-                                    <input type="email" class="form-control p-4" id="email" placeholder="Votre Email"
-                                        required="required" data-validation-required-message="Veuillez entrer votre email" />
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <input type="text" class="form-control p-4" id="subject" placeholder="Sujet"
-                                    required="required" data-validation-required-message="Veuillez entrer un sujet" />
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="control-group">
-                                <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Message"
-                                    required="required"
-                                    data-validation-required-message="Veuillez entrer votre message"></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div>
-                                <button class="btn btn-outline-primary" type="submit" id="sendMessageButton">Envoyer le Message</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Contact End -->
-
-
-    <!-- Footer Start -->
-    <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
-        <div class="container text-center py-5">
-            <div class="d-flex justify-content-center mb-4">
-                <a class="btn btn-light btn-social mr-2" href="https://twitter.com/OusmaneDeme" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-light btn-social mr-2" href="https://www.facebook.com/profile.php?id=100086113619649" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-light btn-social mr-2" href="https://www.linkedin.com/in/ousmane-deme1618/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <a class="btn btn-light btn-social" href="https://www.instagram.com/oussmanedeme/" target="_blank"><i class="fab fa-instagram"></i></a>
-            </div>
-            <div class="d-flex justify-content-center mb-3">
-                <a class="text-white" href="#">Confidentialité</a>
-                <span class="px-3">|</span>
-                <a class="text-white" href="#">Conditions</a>
-                <span class="px-3">|</span>
-                <a class="text-white" href="#">FAQ</a>
-                <span class="px-3">|</span>
-                <a class="text-white" href="#contact">Contact</a>
-            </div>
-            <p class="m-0">&copy; <a class="text-white font-weight-bold" href="#">Ousmane DEME</a>. 
-            Tous droits réservés. Portfolio Cybersécurité & Réseaux.
-            </p>
-        </div>
-    </div>
-    <!-- Footer End -->
-
-    <!-- Scroll to Bottom -->
-    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
-
-
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/typed/typed.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
-
-    <!-- EmailJS CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3.11.0/dist/email.min.js"></script>
+  <script src="js/site.js"></script>
 </body>
-
 </html>
