@@ -1,0 +1,24 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Valider le HTML
+        run: npx --yes html-validate index.html
+
+      - name: Vérifier la syntaxe JavaScript
+        run: node --check js/site.js
+
+      - name: Vérifier les fichiers locaux
+        run: |
+          for f in css/site.css js/site.js cv/Ousmane_DEME_CV.pdf img/profile.jpg; do
+            test -f "$f" || { echo "Fichier manquant: $f"; exit 1; }
+          done
